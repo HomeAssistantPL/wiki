@@ -1,12 +1,12 @@
-1. ogólny
-2. offtop
-3. Wiedza - home assistant
+# ogólny
+# offtop
+# wiedza - home assistant
 - automatyzacje
 - esphome
 - dev
 - diy 
 - lovelance
-4. Wiedza - pozostale
+# wiedza - pozostale
 - node-red
 - sprzet
 - z-wave
@@ -15,7 +15,7 @@
 - apple-homekit
 - google-home
 - amazon-alexa
-5. $$$
+# $$$
 - sklepik
 - zlecenia
 
