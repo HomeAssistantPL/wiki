@@ -3,7 +3,7 @@ Pozwalają na zdalne sterowanie obwodem elektrycznym. W odróżnieniu od [Gniazd
 
 Przykładowe urządzenia:
 ## Shelly
-* [Shelly 4 Pro](../sprzęt/producenci/Shelly/Shelly%204%20Pro.md)
+* [Shelly 4 Pro](../producenci/Shelly/Shelly%204%20Pro.md)
 ## Sonoff
 * [Sonoff 4CH](../producenci/Sonoff/Sonoff%204CH.md)
 * [Sonoff 4CH Pro](../producenci/Sonoff/Sonoff%204CH%20Pro.md)
