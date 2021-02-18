@@ -25,7 +25,7 @@ TODO
 ## Sonoff
 Sonoff ZBBridge
 * ZigBee 3.0
-* WiFi 1.4GHz
+* WiFi 2.4GHz
 * brak wsparcia w zigbee2mqtt
 
 Możliwość przeflashowania na oprogramowanie 3rd party.
