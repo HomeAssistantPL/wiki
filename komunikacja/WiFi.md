@@ -13,9 +13,9 @@ Jednak prościej jest użyć mikrokontrolera z wbudowanym WiFi np: ESP8266 (Wemo
 Większość laptopów ma wbudowaną kartę WiFi. W komputerze stacjonarnym można skorzystać z dongle WiFi na USB.
 
 Zobacz też:
-* [Gniazdka WiFi](../sprzęt/rodzaje/Gniazdka%20WiFi.md)
-* [Smart lampy WiFi](../sprzęt/rodzaje/Smart%20lampy%20WiFi.md)
-* [Smart nadajniki dopuszkowe WiFi](../sprzęt/rodzaje/Smart%20nadajniki%20dopuszkowe%20WiFi.md)
-* [Smart przekaźniki WiFi](../sprzęt/rodzaje/Smart%20przekaźniki%20WiFi.md)
-* [Smart żarówki WiFi](../sprzęt/rodzaje/Smart%20żarówki%20WiFi.md)
-* [Sterowniki dopuszkowe WiFi](../sprzęt/rodzaje/Sterowniki%20dopuszkowe%20WiFi.md)
+* [Gniazdka WiFi](../sprzęt/rodzaje/Gniazdka%20WiFi)
+* [Smart lampy WiFi](../sprzęt/rodzaje/Smart%20lampy%20WiFi)
+* [Smart nadajniki dopuszkowe WiFi](../sprzęt/rodzaje/Smart%20nadajniki%20dopuszkowe%20WiFi)
+* [Smart przekaźniki WiFi](../sprzęt/rodzaje/Smart%20przekaźniki%20WiFi)
+* [Smart żarówki WiFi](../sprzęt/rodzaje/Smart%20żarówki%20WiFi)
+* [Sterowniki dopuszkowe WiFi](../sprzęt/rodzaje/Sterowniki%20dopuszkowe%20WiFi)
