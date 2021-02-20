@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+# HomeAssistantPL
+Witamy na stronach grupy Facebook [Home Assistant Polska](https://www.facebook.com/groups/homeassistantpolska).
 
-You can use the [editor on GitHub](https://github.com/HomeAssistantPL/wiki/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Znajdziesz tu informacje na temat budowania instalacji inteligentnego domu w oparciu o Home Assistant.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Materiały tu umieszczone mają na celu zebranie podstawowych informacji dla zainteresowanych tą tematyką.
 
-### Markdown
+Są tutaj także odpowiedzi na pytania wielokrotnie zadawane na grupie.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Komunikacja](komunikacja/index.md)
+* [Rodzaje komunikacji przewodowej](komunikacja/Rodzaje%20komunikacji%20przewodowej.md)
+	* [Szeregowa](komunikacja/Szeregowa.md)
+	* [RS232](komunikacja/RS232.md)
+	* [RS485](komunikacja/RS485.md)
+	* [i2c](komunikacja/i2c.md)
+	* [1-wire (OneWire)](komunikacja/1-wire%20(OneWire).md)
+	* [Ethernet](komunikacja/Ethernet.md)
+* [Rodzaje komunikacji bezprzewodowej](komunikacja/Rodzaje%20komunikacji%20bezprzewodowej.md)
+	* [WiFi](komunikacja/WiFi.md)
+	* [ZigBee](komunikacja/ZigBee.md)
+	* [BlueTooth](komunikacja/BlueTooth.md)
+	* [Z-Wave](komunikacja/Z-Wave.md)
+	* [RF 433](komunikacja/RF%20433.md)
 
-```markdown
-Syntax highlighted code block
+[Sprzęt](sprzęt/index.md)
+* [Rodzaje urządzeń](sprzęt/rodzaje/index.md)
+	* [Bramki ZigBee](sprzęt/rodzaje/Bramki%20ZigBee.md) ** polecamy! **
+* [Sprzęt wg producentów](sprzęt/producenci/index.md)
+* [Firmware](sprzęt/firmware/index.md)
+	* [ESPEasy](sprzęt/firmware/ESPEasy.md)
+	* [ESPHome](sprzęt/firmware/ESPHome.md)
+	* [Supla](sprzęt/firmware/Supla.md)
+	* [Tasmota](sprzęt/firmware/Tasmota.md)
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/HomeAssistantPL/wiki/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[Zagadnienia](zagadnienia/index.md)
+* [Sterowanie światłem](zagadnienia/Sterowanie%20światłem.md)
+* [Liczniki energii](zagadnienia/Liczniki%20energii.md)
