@@ -1,6 +1,6 @@
 # Rodzaje komunikacji bezprzewodowej
-* [WiFi](WiFi.md)
-* [ZigBee](ZigBee.md)
-* [Z-Wave](Z-Wave.md)
-* [BlueTooth](BlueTooth.md)
-* [RF 433](RF%20433.md)
+* [WiFi](WiFi)
+* [ZigBee](ZigBee)
+* [Z-Wave](Z-Wave)
+* [BlueTooth](BlueTooth)
+* [RF 433](RF%20433)
