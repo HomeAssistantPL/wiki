@@ -9,7 +9,7 @@ Strona producenta:
 * https://www.ikea.com/pl/pl/cat/inteligentny-dom-hs001/
 
 ## Bramka
-* [Bramka Ikea Tradfri](Bramka%20Ikea%20Tradfri.md)
+* [Bramka Ikea Tradfri](Bramka%20Ikea%20Tradfri)
 
 ## Żarówki ZigBee
 * https://www.ikea.com/pl/pl/cat/zarowki-bezprzewodowe-36813/

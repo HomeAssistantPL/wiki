@@ -1,21 +1,21 @@
 # Sprzęt wg rodzaju
-* [Bramki ZigBee](Bramki%20ZigBee.md)
+* [Bramki ZigBee](Bramki%20ZigBee)
 
-* [Gniazdka WiFi](Gniazdka WiFi.md)
-* [Gniazdka ZigBee](Gniazdka ZigBee.md)
+* [Gniazdka WiFi](Gniazdka WiFi)
+* [Gniazdka ZigBee](Gniazdka ZigBee)
 
-* [Lampy Bluetooth](Smart lampy Bluetooth.md)
-* [Lampy WiFi](Smart lampy WiFi.md)
+* [Lampy Bluetooth](Smart lampy Bluetooth)
+* [Lampy WiFi](Smart lampy WiFi)
 
-* [Żarówki WiFi](Smart żarówki WiFi.md)
-* [Żarówki ZigBee](Smart żarówki ZigBee.md)
+* [Żarówki WiFi](Smart żarówki WiFi)
+* [Żarówki ZigBee](Smart żarówki ZigBee)
 
-* [Nadajniki dopuszkowe WiFi](Smart nadajniki dopuszkowe WiFi.md)
+* [Nadajniki dopuszkowe WiFi](Smart nadajniki dopuszkowe WiFi)
 
-* [Wyłączniki Bluetooth](Smart wyłączniki Bluetooth.md)
+* [Wyłączniki Bluetooth](Smart wyłączniki Bluetooth)
 
-* [Sterowniki dopuszkowe WiFi](Sterowniki dopuszkowe WiFi.md)
+* [Sterowniki dopuszkowe WiFi](Sterowniki dopuszkowe WiFi)
 
-* [Przekaźniki WiFi](Smart przekaźniki WiFi.md)
-* [Przekaźniki ZigBee](Przekaźniki%20ZigBee.md)
+* [Przekaźniki WiFi](Smart przekaźniki WiFi)
+* [Przekaźniki ZigBee](Przekaźniki%20ZigBee)
 

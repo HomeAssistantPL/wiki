@@ -1,5 +1,5 @@
 # Szeregowa
-Serial TTL, nie mylić z [RS232](RS232.md). W serial TTL sygnał ma napięcie ok. 5V i ok. 0V. Czasem jest też używane 3,3V zamiast 5V.
+Serial TTL, nie mylić z [RS232](RS232). W serial TTL sygnał ma napięcie ok. 5V i ok. 0V. Czasem jest też używane 3,3V zamiast 5V.
 
 Transmisja jest jednokierunkowa TX->RX, do komunikacji w dwie strony potrzeba 3 linii: masy i TX -> RX oraz RX <- TX.
 
