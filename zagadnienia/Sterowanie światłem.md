@@ -1,3 +1,9 @@
+---
+title: "Sterowanie światłem"
+nav_exclude: false
+parent: "Zagadnienia"
+---
+
 # Sterowanie światłem
 
 ## Smart żarówki

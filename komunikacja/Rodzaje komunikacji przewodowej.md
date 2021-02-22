@@ -1,3 +1,9 @@
+---
+title: "Rodzaje komunikacji przewodowej"
+nav_exclude: false
+parent: "Komunikacja"
+---
+
 # Rodzaje komunikacji przewodowej
 * [Szeregowa](Szeregowa)
 * [RS232](RS232)

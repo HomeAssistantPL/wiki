@@ -1,3 +1,9 @@
+---
+title: "Liczniki energii"
+nav_exclude: false
+parent: "Zagadnienia"
+---
+
 # Liczniki energii
 ## Smart gniazdka z funkcją pomiaru energii
 Najprostszy sposób pomiaru zużywanej energii przez urządzenie, to wpięcie go do smart gniazdka z taką funkcją. W ten sposób mierzy się pobór energii jednego urządzenia np. lodówki. 

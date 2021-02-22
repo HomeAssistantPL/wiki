@@ -1,4 +1,4 @@
-title: HomeAssistantPL
+title: "HomeAssistantPL"
 # email: your-email@example.com
 # description: >- # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
@@ -7,10 +7,11 @@ title: HomeAssistantPL
 baseurl: "/wiki" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-github_username:  HomeAssistantPL
+github_username: "HomeAssistantPL"
 
 # Build settings
-theme: jekyll-theme-hacker
+remote_theme: pmarsceill/just-the-docs
+color_scheme: light
 # plugins:
 #   - jekyll-feed
 
@@ -39,3 +40,21 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+      nav_exclude: true
+      has_children: false
+
+# Aux links for the upper right navigation
+aux_links:
+  "Dołącz do nas na FB":
+    - "https://www.facebook.com/groups/homeassistantpolska"
+aux_links_new_tab: true
+
+# GitHub related stuff
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edytuj stronę na GitHub"
+gh_edit_repository: "https://github.com/HomeAssistantPL/wiki" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+# Back to top link
+back_to_top: true
+back_to_top_text: "Powrót na górę"

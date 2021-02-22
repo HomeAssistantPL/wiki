@@ -1,3 +1,9 @@
+---
+title: "Firmware"
+nav_exclude: false
+parent: "Sprzęt"
+---
+
 # Firmware
 Firmware to oprogramowanie wgrane do urządzeń smart.
 Producent wgrywa własne oprogramowanie, które umożliwia użycie aplikacji producenta.
