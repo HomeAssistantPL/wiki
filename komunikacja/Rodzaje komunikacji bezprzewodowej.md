@@ -1,3 +1,9 @@
+---
+title: "Rodzaje komunikacji bezprzewodowej"
+nav_exclude: false
+parent: "Komunikacja"
+---
+
 # Rodzaje komunikacji bezprzewodowej
 * [WiFi](WiFi)
 * [ZigBee](ZigBee)

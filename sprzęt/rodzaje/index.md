@@ -1,3 +1,9 @@
+---
+title: "Rodzaje"
+nav_exclude: false
+parent: "Sprzęt"
+---
+
 # Sprzęt wg rodzaju
 * [Bramki ZigBee](Bramki%20ZigBee)
 

@@ -1,3 +1,9 @@
+---
+title: "Producenci"
+nav_exclude: false
+parent: "Sprzęt"
+---
+
 # Sprzęt wg producentów
 * [Gosund](Gosund/index.md)
 * [Ikea](Ikea/index.md)
