@@ -4,7 +4,7 @@ nav_exclude: false
 has_children: true
 ---
 
-# Komunikacja {: .no_toc }
+# Komunikacja
 
 Komunikacja urządzeń z Home Assistant może być przewodowa lub bezprzewodowa (radiowa).
 Komunikacja przewodowa powinna być **pierwszym wyborem** tam gdzie to tylko możliwe, ponieważ:
