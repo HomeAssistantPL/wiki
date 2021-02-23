@@ -5,11 +5,11 @@ parent: "Sprzęt"
 ---
 
 # Sprzęt wg producentów
-* [Gosund](Gosund/index.md)
-* [Ikea](Ikea/index.md)
-* [Lidl](Lidl/index.md)
-* [Mi](Xiaomi/index.md)
-* [Philips](Philips/index.md)
-* [Shelly](Shelly/index.md)
-* [Sonoff](Sonoff/index.md)
-* [Yeelight](Yeelight/index.md)
+* [Gosund](Gosund)
+* [Ikea](Ikea)
+* [Lidl](Lidl)
+* [Mi](Xiaomi)
+* [Philips](Philips)
+* [Shelly](Shelly)
+* [Sonoff](Sonoff)
+* [Yeelight](Yeelight)
