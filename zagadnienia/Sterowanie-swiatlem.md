@@ -12,16 +12,16 @@ By działało sterowanie smart, żarówka musi być cały czas zasilana, czyli n
 Po zaniku zasilania żarówki ZigBee powinny wrócić do ostatniego stanu wyłączenia lub włączenia z ostatnio ustawioną jasnością i kolorem.
 Inne żarówki też tak mogą działać albo mogą pozostać wyłączone
 
-[Smart żarówki WiFi](../sprzęt/rodzaje/Smart%20żarówki%20WiFi)
+[Smart żarówki WiFi](../sprzet/rodzaje/Smart-żarówki-WiFi)
 
-[Smart żarówki ZigBee](../sprzęt/rodzaje/Smart%20żarówki%20ZigBee)
+[Smart żarówki ZigBee](../sprzet/rodzaje/Smart-żarówki-ZigBee)
 	
 ## Smart lampy
 Zastępują całą tradycyjną lampę sufitową lub ścienną
 
-[Smart lampy WiFi](../sprzęt/rodzaje/Smart%20lampy%20WiFi)
+[Smart lampy WiFi](../sprzet/rodzaje/Smart-lampy-WiFi)
 
-[Smart lampy Bluetooth](../sprzęt/rodzaje/Smart%20lampy%20Bluetooth)
+[Smart lampy Bluetooth](../sprzet/rodzaje/Smart-lampy-Bluetooth)
 
 	
 ## Smart wyłączniki
@@ -30,24 +30,24 @@ Te produkowane w Chinach często są w rozmiarach dostosowanych do puszek ameryk
 Niektóre wyłączniki mogą sterować także jasnością światła, gdy żarówki umożliwiają ściemnianie.
 Sterowanie światłem może być lokalne - przyciskami wyłącznika lub zdalne.
 
-[Smart wyłączniki Bluetooth](../sprzęt/rodzaje/Smart%20wyłączniki%20Bluetooth)
+[Smart wyłączniki Bluetooth](../sprzet/rodzaje/Smart-wyłączniki-Bluetooth)
 
 ## Smart nadajniki dopuszkowe pod tradycyjnym wyłącznikiem
 Pozwalają na usmartowienie tradycyjnego wyłącznika. Nie zawierają przekaźnika, więc nie mogą bezpośrednio sterować światłem - potrzebny jest jeszcze smart przekaźnik.
 
-[Smart nadajniki dopuszkowe WiFi](../sprzęt/rodzaje/Smart%20nadajniki%20dopuszkowe%20WiFi)
+[Smart nadajniki dopuszkowe WiFi](../sprzet/rodzaje/Smart-nadajniki-dopuszkowe-WiFi)
 
 ## Sterowniki dopuszkowe pod tradycyjnym wyłącznikiem
 Montowane pod tradycyjnym wyłącznikiem jedno- i dwu- biegunowym zamieniają go w wyłącznik smart. Wyłącznik już nie łączy bezpośrednio obwodu lampy, ale jest podpięty do sterownika, który ma przekaźnik lub SSR, którym steruje lampą. Dzięki temu sterownik może sterować lampą niezależnie od położenia wyłącznika. Sterowaniki takie mogą współpracować z normalnymi wyłącznikami lub chwilowymi.
 
-[Sterowniki dopuszkowe WiFi](../sprzęt/rodzaje/Sterowniki%20dopuszkowe%20WiFi)
+[Sterowniki dopuszkowe WiFi](../sprzet/rodzaje/Sterowniki-dopuszkowe-WiFi)
 
 ## Sterowanie w rozdzielnicy
 W rozdzielnicach montuje się urządzenia na szynie DIN. Jeśli urządzenie nie jest do tego przystosowane, można dokupić lub wydrukować odpowiednie uchwyty. 
 Możliwe rozwiązania:
-* [gotowy sterownik jedno-, dwu- lub czterokanałowy z wbudowanymi przekaźnikami](../sprzęt/rodzaje/Smart%20przekaźniki%20WiFi)
-* [DIY mikrokontroller plus przekaźniki/SSR](DIY%20rozdzielnica%20na%20przeka%C5%BAnikach)
-* [DIY mikrokontroller plus przekaźniki bistabilne](DIY%20rozdzielnica%20na%20przeka%C5%BAnikach%20bistabilnych)
+* [gotowy sterownik jedno-, dwu- lub czterokanałowy z wbudowanymi przekaźnikami](../sprzet/rodzaje/Smart-przekazniki-WiFi)
+* [DIY mikrokontroller plus przekaźniki/SSR](DIY-rozdzielnica-na-przekaznikach)
+* [DIY mikrokontroller plus przekaźniki bistabilne](DIY-rozdzielnica-na-przekaznikach-bistabilnych)
 
 
 ### Moduły smart przekaźników
