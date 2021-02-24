@@ -9,4 +9,4 @@ parent: "Komunikacja"
 * [ZigBee](ZigBee)
 * [Z-Wave](Z-Wave)
 * [BlueTooth](BlueTooth)
-* [RF 433](RF%20433)
+* [RF 433](RF433)

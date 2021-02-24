@@ -23,9 +23,9 @@ Komunikacja bezprzewodowa powinna być stosowana w przypadku gdy:
 * urządzenie będzie przenoszone z miejsca na miejsce
 * urządzenie nie jest krytyczne i ewentualne problemy z jego działaniem nie będą bardzo bolesne
 
-[Rodzaje komunikacji przewodowej](Rodzaje%20komunikacji%20przewodowej)
+[Rodzaje komunikacji przewodowej](../Rodzaje-komunikacji-przewodowej)
 
-[Rodzaje komunikacji bezprzewodowej](Rodzaje%20komunikacji%20bezprzewodowej)
+[Rodzaje komunikacji bezprzewodowej](../Rodzaje-komunikacji-bezprzewodowej)
 
 ## Chmura
 Większość gotowych urządzeń smart korzysta z połączenia z chmurą czyli serwerami producenta w Internecie. Aplikacja na smartfonie łączy się też z tymi serwerami, dzięki czemu można odczytywać stan czujników i sterować urządzeniem.
