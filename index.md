@@ -31,7 +31,7 @@ Są tutaj także odpowiedzi na pytania wielokrotnie zadawane na grupie.
 
 [Sprzęt](sprzet/index)
 * [Rodzaje urządzeń](sprzet/rodzaje/index)
-	* [Bramki ZigBee](sprzet/rodzaje/Bramki-ZigBee) **polecamy!**
+	* [Bramki ZigBee](sprzet/rodzaje/Bramki-ZigBee)
 * [Sprzęt wg producentów](sprzet/producenci/index)
 * [Firmware](sprzet/firmware/index)
 	* [ESPEasy](sprzet/firmware/ESPEasy)
