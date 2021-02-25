@@ -5,6 +5,6 @@ has_children: true
 ---
 
 # Sprzęt
-* [Rodzaje](sprzęt/rodzaje/index.md)
-* [Producenci](producenci/index.md)
-* [Firmware](firmware/index.md)
+* [Rodzaje](rodzaje)
+* [Producenci](producenci)
+* [Firmware](firmware)

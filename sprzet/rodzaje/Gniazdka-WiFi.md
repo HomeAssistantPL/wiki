@@ -4,12 +4,12 @@ Pozwalają w prosty sposób sterować urządzeniem zasilanym kablem z wtyczką. 
 
 Przykładowe urządzenia:
 ## Shelly
-[Shelly Plug](../producenci/Shelly/Shelly%20Plug.md)
+[Shelly Plug](../producenci/Shelly/Shelly-Plug)
 
-[Shelly Plug S](../producenci/Shelly/Shelly%20Plug%20S.md)
+[Shelly Plug S](../producenci/Shelly/Shelly-Plug-S)
 
 
 ## GOSUND
-[GOSUND SP111](../producenci/Gosund/GOSUND%20SP111.md)
+[GOSUND SP111](../producenci/Gosund/GOSUND-SP111)
 
 

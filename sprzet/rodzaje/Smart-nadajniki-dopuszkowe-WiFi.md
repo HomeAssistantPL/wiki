@@ -3,4 +3,4 @@ Zamienia zwykły wyłącznik w nadajnik, co pozwala sterować innym urządzeniem
 
 Przykładowe urządzenia:
 ## Shelly
-[Shelly I3](../producenci/Shelly/Shelly%20I3.md)
+[Shelly I3](../producenci/Shelly/Shelly-I3)

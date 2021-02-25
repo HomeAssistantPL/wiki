@@ -7,25 +7,30 @@ Przykładowe urządzenia:
 * zasilanie 230V AC lub 12V, 24-60V DC
 * 1 kanał max 16A
 * podłączenie 1 przycisku
+
 ### Shelly 1L
 * nie wymaga N
 * 1 kanał
 * podłączenie dwóch przycisków
+
 ### Shelly 1PM
 * pomiar energii
 * zasilanie 230V AC lub 24-60V DC
 * 1 kanał max 16A
 * podłączenie jednego przycisku
 * wymaga N
+
 ### Shelly Dimmer
 * nie wymaga N
 * 1 kanał
 * ściemnianie żarówek tradycyjnych i halogenowych 230V AC (10-220W)
 * ściemnialnych LED 230V AC (50-200VA/10W-200W)
 * podłączenie dwóch przycisków
-#### Shelly EM
+
+### Shelly EM
 * funkcja pomiaru energii
 * 2 kanały do podpięcia przekładników prądowych
+
 ### Shelly RGBW2
 * do sterowania pasków LED i żarówek LED
 * 4 kanały
@@ -40,6 +45,7 @@ Przykładowe urządzenia:
 	* pasek LED RGB
 	* 4 paski LED białe
 	* żarówki LED 12V l ub 24V
+
 ### Shelly 2.5
 Sterownik dwóch żarówek 230V lub 24-60V DC lub sterownik rolet 230V AC (sterowanie silnikiem ze zmianą kierunku)
 * 2 kanały

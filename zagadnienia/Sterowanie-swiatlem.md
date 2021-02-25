@@ -12,9 +12,9 @@ By działało sterowanie smart, żarówka musi być cały czas zasilana, czyli n
 Po zaniku zasilania żarówki ZigBee powinny wrócić do ostatniego stanu wyłączenia lub włączenia z ostatnio ustawioną jasnością i kolorem.
 Inne żarówki też tak mogą działać albo mogą pozostać wyłączone
 
-[Smart żarówki WiFi](../sprzet/rodzaje/Smart-żarówki-WiFi)
+[Smart żarówki WiFi](../sprzet/rodzaje/Smart-zarowki-WiFi)
 
-[Smart żarówki ZigBee](../sprzet/rodzaje/Smart-żarówki-ZigBee)
+[Smart żarówki ZigBee](../sprzet/rodzaje/Smart-zarowki-ZigBee)
 	
 ## Smart lampy
 Zastępują całą tradycyjną lampę sufitową lub ścienną
@@ -30,7 +30,7 @@ Te produkowane w Chinach często są w rozmiarach dostosowanych do puszek ameryk
 Niektóre wyłączniki mogą sterować także jasnością światła, gdy żarówki umożliwiają ściemnianie.
 Sterowanie światłem może być lokalne - przyciskami wyłącznika lub zdalne.
 
-[Smart wyłączniki Bluetooth](../sprzet/rodzaje/Smart-wyłączniki-Bluetooth)
+[Smart wyłączniki Bluetooth](../sprzet/rodzaje/Smart-wylaczniki-Bluetooth)
 
 ## Smart nadajniki dopuszkowe pod tradycyjnym wyłącznikiem
 Pozwalają na usmartowienie tradycyjnego wyłącznika. Nie zawierają przekaźnika, więc nie mogą bezpośrednio sterować światłem - potrzebny jest jeszcze smart przekaźnik.
