@@ -10,11 +10,11 @@ Jeżeli chcesz używać urządzeń różnych producentów lub użyć innej integ
 
 # Bramki producentów
 ## Lidl
-[SILVERCREST Bramka sieciowa Zigbee Smart Home](../producenci/Lidl/SILVERCREST%20Bramka%20sieciowa%20Zigbee%20Smart%20Home.md)
+[SILVERCREST Bramka sieciowa Zigbee Smart Home](../producenci/Lidl/SILVERCREST-Bramka-sieciowa-Zigbee-Smart-Home)
 
 
 ## Ikea
-[Bramka Ikea Tradfri](../producenci/Ikea/Bramka%20Ikea%20Tradfri.md)
+[Bramka Ikea Tradfri](../producenci/Ikea/Bramka-Ikea-Tradfri)
 
 ## Philips
 TODO
@@ -30,11 +30,11 @@ Sonoff ZBBridge
 
 Możliwość przeflashowania na oprogramowanie 3rd party.
 
-https://www.amazon.co.uk/Gateway-Wirelessly-Connect-Devices-Compatible/dp/B08BCL961G
+[https://www.amazon.co.uk/Gateway-Wirelessly-Connect-Devices-Compatible/dp/B08BCL961G](https://www.amazon.co.uk/Gateway-Wirelessly-Connect-Devices-Compatible/dp/B08BCL961G)
 
 
 ## Xiaomi
-[Mi Smart Home Hub BLE ZigBee Wi-Fi](../producenci/Xiaomi/Mi%20Smart%20Home%20Hub%20BLE%20ZigBee%20Wi-Fi.md)
+[Mi Smart Home Hub BLE ZigBee Wi-Fi](../producenci/Xiaomi/Mi-Smart-Home-Hub-BLE-ZigBee-WiFi)
 
 
 # Bramki uniwersalne
@@ -43,7 +43,7 @@ https://www.amazon.co.uk/Gateway-Wirelessly-Connect-Devices-Compatible/dp/B08BCL
 * mocny sygnał (max 10mW), dzięki wbudowanemu wzmacniaczowi (20dB)
 * wbudowana antena
 * zasięg do 30m w budynku (2-3 pokoje lub piętra), do 200m w polu widzenia
-* obsługuje urządzenia wielu producentów: https://www.phoscon.de/en/conbee2/compatible
+* obsługuje urządzenia wielu producentów: [https://www.phoscon.de/en/conbee2/compatible](https://www.phoscon.de/en/conbee2/compatible)
 * może obsługiwać duże sieci
 * działa na Raspberry Pi oraz komputerach PC - wpinana do USB
 * integracja z Home Assistant:
@@ -52,7 +52,8 @@ https://www.amazon.co.uk/Gateway-Wirelessly-Connect-Devices-Compatible/dp/B08BCL
 
 Urządzenie można kupić na [Amazon](https://www.phoscon.de/en/conbee2?buy=1#buy) 
 Cena ok. 40EUR
-Strona producenta: https://www.phoscon.de/en/conbee2
+
+Strona producenta: [https://www.phoscon.de/en/conbee2](https://www.phoscon.de/en/conbee2)
 
 
 ## CC2531
@@ -78,7 +79,7 @@ Znane problemy:
 * stosunkowo duża płytka
 * cena ok. 6,50$
 * zasięg porównywalny z CC2530 z antenką
-Strona producenta: https://www.ti.com/tool/LAUNCHXL-CC1352P
+Strona producenta: [https://www.ti.com/tool/LAUNCHXL-CC1352P](https://www.ti.com/tool/LAUNCHXL-CC1352P)
 
 ## CC1352P
 * wersja P ma wzbudowany wzmacniacz (20dB).
@@ -89,7 +90,7 @@ Strona producenta: https://www.ti.com/tool/LAUNCHXL-CC1352P
 * wystarczy sflashować przez USB i aplikację Uniflash
 * cena ok. 49$
 Do kupienia np. w Mouser Electronics w Niemczech
-Strona producenta: https://www.ti.com/tool/LAUNCHXL-CC1352P
+Strona producenta: [https://www.ti.com/tool/LAUNCHXL-CC1352P](https://www.ti.com/tool/LAUNCHXL-CC1352P)
 
 ## CC2652R
 * stick USB 
@@ -98,8 +99,8 @@ Strona producenta: https://www.ti.com/tool/LAUNCHXL-CC1352P
 * może obsługiwać duże sieci
 * obsługiwany i **polecany** przez zigbee2mqtt:
 	* Electrolama zzh!
-	* https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/#product-reviews
-	* https://electrolama.com/projects/zig-a-zig-ah/
+	* [https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/#product-reviews](https://www.tindie.com/products/electrolama/zzh-cc2652r-multiprotocol-rf-stick/#product-reviews)
+	* [https://electrolama.com/projects/zig-a-zig-ah/](https://electrolama.com/projects/zig-a-zig-ah/)
 
 ## CC2652RB
 * stick USB 
@@ -108,17 +109,17 @@ Strona producenta: https://www.ti.com/tool/LAUNCHXL-CC1352P
 * może obsługiwać duże sieci
 * obsługiwany i **polecany** przez zigbee2mqtt: 
 	* Slaesh's CC2652RB stick
-		* https://slae.sh/projects/cc2652/
+		* [https://slae.sh/projects/cc2652/](https://slae.sh/projects/cc2652/)
 		* cena ok. 30EUR
 	* Wersja DIY
-		* Obudowa do wydruku: https://www.thingiverse.com/thing:3928171
+		* Obudowa do wydruku: [https://www.thingiverse.com/thing:3928171](https://www.thingiverse.com/thing:3928171)
 
 ## CC2652P
 **Polecany!**
 * stick USB 
 * antenka
 * wzmacniacz
-* Obudowa do wydruku: https://www.thingiverse.com/thing:3928171
+* Obudowa do wydruku: [https://www.thingiverse.com/thing:3928171](https://www.thingiverse.com/thing:3928171)
 * wersje:
 	* EByte
 	* RF-STAR

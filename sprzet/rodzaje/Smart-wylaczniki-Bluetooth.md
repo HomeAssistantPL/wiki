@@ -1,6 +1,6 @@
 # Smart wyłączniki Bluetooth
-Pozwala sterować [smart lampą Bluetooth](Smart%20lampy%20Bluetooth.md)
+Pozwala sterować [smart lampą Bluetooth](Smart-lampy-Bluetooth)
 
 Przykładowe urządzenia:
 ## Yeelight
-[Yeelight Wireless Smart Dimmer](../producenci/Yeelight/Yeelight%20Wireless%20Smart%20Dimmer.md)
+[Yeelight Wireless Smart Dimmer](../producenci/Yeelight/Yeelight-Wireless-Smart-Dimmer)

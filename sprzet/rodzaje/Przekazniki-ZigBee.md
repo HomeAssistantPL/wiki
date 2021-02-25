@@ -1,5 +1,5 @@
- # Przekaźniki ZigBee
+# Przekaźniki ZigBee
  
- ## Sonoff
+## Sonoff
  
- * [Sonoff BASIC ZBR3](../producenci/Sonoff/Sonoff%20BASIC%20ZBR3.md)
+* [Sonoff BASIC ZBR3](../producenci/Sonoff/Sonoff-BASIC-ZBR3)
