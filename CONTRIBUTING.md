@@ -27,6 +27,7 @@ Poniższa metoda wymaga skonfigurowania środowiska lokalnego, lecz dzięki temu
 * [Rozwidl](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) nasze [gitowe repozytorium](https://github.com/HomeAssistantPL/wiki)
 * Sklonuj repozytorium wykonując `git clone URL_TWOJEGO_FORKA`
 * Zmień folder: `cd wiki`
+* Zainstaluj wymagane biblioteki `bundle install`
 * Uruchom lokalny serwer: `bundle exec jekyll serve`
 * W przeglądarce wejdź pod adres `http://localhost:4000/wiki/`, aby zobaczyć lokalną kopię strony
 
