@@ -2,6 +2,7 @@
 title: Komunikacja
 nav_exclude: false
 has_children: true
+nav_order: 2
 ---
 
 # Komunikacja

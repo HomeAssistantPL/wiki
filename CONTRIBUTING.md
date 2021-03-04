@@ -1,3 +1,10 @@
+---
+title: Współtworzenie treści
+nav_exclude: false
+nav_order: 5
+has_children: true
+---
+
 # Jak współtworzyć treści
 
 ## Słowo wstępu
@@ -32,7 +39,7 @@ Poniższa metoda wymaga skonfigurowania środowiska lokalnego, lecz dzięki temu
 * W przeglądarce wejdź pod adres `http://localhost:4000/wiki/`, aby zobaczyć lokalną kopię strony
 
 ### Wprowadzanie zmian
-* Dokonaj edycji treści
+* Dokonaj edycji treści istniejącej strony lub [utwórz nową stronę](wspoltworzenie-tresci/tworzenie-nowej-strony)
 * Upewnij się, że dokonane zmiany są poprawne **testując** je w swoim lokalnym środowisku
 * Wykonaj `git commit -m "ZWIĘZŁY_OPIS_ZMIAN"`, a następnie `git push`, aby lokalne zmiany znalazły się na serwerze `github.com`
 * Utwórz [Pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request#creating-the-pull-request) (PR) 
