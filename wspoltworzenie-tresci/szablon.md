@@ -2,7 +2,7 @@
 # Tytuł strony
 title: Szablon
 # Czy strona ma zostać wyłączona z menu nawigacji. Domyślnie true
-nav_exclude: false
+nav_exclude: true
 # Jeśli parametr "nav_exclude" jest ustawiony na "false", wówczas można wskazać kolejność strony w menu nawigacji
 nav_order: 2
 # Czy strona posiada podstrony. Domyślnie false
