@@ -47,7 +47,7 @@ Są tutaj także odpowiedzi na pytania wielokrotnie zadawane na grupie.
 * [Lovelace](Gotowce/Lovelace)
  	* [apexcharts-card](Gotowce/apexcharts-card)
  	* [mini-graph-card](Gotowce/mini-graph-card)
- 	* [FlexibleHorseshoe](Gotowce/Flexible-Horseshoe)
+ 	* [Flexible-Horseshoe](Gotowce/Flexible-Horseshoe)
  	* [Multiple-Entity-Row](Gotowce/Multiple-Entity-Row)
  	* [Flex-Table](Gotowce/Flex-Table)
 * [Automatyzacje](Gotowce/Automatyzacje)
