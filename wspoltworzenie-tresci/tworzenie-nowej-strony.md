@@ -20,6 +20,6 @@ parent: "Współtworzenie treści"
 ---
 ```
 
-* Możesz również skorzystać z [szablonu](szablon). Ten sam szablon wraz z objaśnieniami jak korzystać z poszczególnych parametrów znajdziesz bezpośrednio w [repozytorium]({{ site.gh_edit_repository }}/{{ site.gh_edit_view_mode }}/{{ site.gh_edit_branch }}{% if site.gh_edit_source %}/{{ site.gh_edit_source }}{% endif %}/wspoltworzenie-tresci/szablon.md)
+* Możesz również skorzystać z [szablonu]({{ site.gh_edit_repository }}/{{ site.gh_edit_view_mode }}/{{ site.gh_edit_branch }}{% if site.gh_edit_source %}/{{ site.gh_edit_source }}{% endif %}/wspoltworzenie-tresci/szablon.md). Ten sam szablon w wersji `raw`, wraz z objaśnieniami jak korzystać z poszczególnych parametrów znajdziesz [tutaj](https://raw.githubusercontent.com/{{ site.github_username }}{{ site.baseurl }}/{{ site.gh_edit_branch }}{% if site.gh_edit_source %}/{{ site.gh_edit_source }}{% endif %}/wspoltworzenie-tresci/szablon.md)
 * Poniżej sekcji `Front Matter` umieść treść swojej strony korzystając z [Markdown](https://guides.github.com/features/mastering-markdown/#examples)
 * **Przetestuj**, a następnie opublikuj zmiany zgodnie z kolejnymi krokami [instrukcji](../CONTRIBUTING#wprowadzanie-zmian)
