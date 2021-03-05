@@ -42,3 +42,5 @@ Są tutaj także odpowiedzi na pytania wielokrotnie zadawane na grupie.
 [Zagadnienia](zagadnienia/index)
 * [Sterowanie światłem](zagadnienia/Sterowanie-swiatlem)
 * [Liczniki energii](zagadnienia/Liczniki-energii)
+[Konfiguracje kart dla Lovelace](Lovelace/index)
+* [apexcharts-card)](Lovelace/apexcharts-card)
