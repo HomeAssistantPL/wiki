@@ -15,13 +15,13 @@ Jeśli ktoś potrafi może napisać, skompilować i wgrać własny firmware korz
 Ale dużo prościej jest skorzystać z gotowych firmware, które pozwalają na konfigurację urządzenia przez stronę www.
 
 Gotowe firmware dla ESP8266:
-[EspEasy](https://espeasy.readthedocs.io/en/latest/)
-[Supla](https://www.supla.org/pl/)
-[Tasmota](https://tasmota.github.io/docs/)
+* [EspEasy](https://espeasy.readthedocs.io/en/latest/)
+* [Supla](https://www.supla.org/pl/)
+* [Tasmota](https://tasmota.github.io/docs/)
 
 Każdy z tych firmware obsługuje wiele urządzeń oraz posiada integrację z Home Assistant (natywną bądź przez MQTT).
 
 Sposobem pośrednim jest wykorzystanie dodatku do Home Assistant - [ESPHome](https://esphome.io/). Korzystając z niego, dla każdego urządzenia trzeba zdefiniować plik konfiguracyjny (yaml) określający cechy urządzenia, podłączone czujniki, przesyłane wartości oraz proste automatyzacje.
 Na podstawie tego pliku ESPHome generuje kod (Arduino/C++), który jest kompilowany i następnie można go wgrać do urządzenia OTA lub kablem USB (przez ESPHome Flasher). Dla wielu urządzeń fabrycznych istnieją szablony takiej konfiguracji na stronach: 
-* https://esphome.io/devices/
-* https://www.esphome-devices.com/
+* [esphome.io/devices](https://esphome.io/devices/)
+* [esphome-devices.com](https://www.esphome-devices.com/)
