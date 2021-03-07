@@ -13,7 +13,7 @@ Lovelace
 ## Wygląd wykresu
 
 ![Wykres trybu pracy pieca](../../../assets/images/wykres-pracy-pieca-dark.jpg)
-![Wykres trybu pracy pieca](../../../assets/images/wykres-pracy-pieca-light.jpg)
+![Wykres trybu pracy pieca](../../../assets/images/wykres-pracy-pieca-light.JPG)
 
 ## Opis
 
