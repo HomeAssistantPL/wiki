@@ -1,3 +1,7 @@
+---
+category: rozdzielnica przekaźniki
+---
+
 # DIY rozdzielnica na przekaźnikach bistabilnych dwukanałowych
 Przekaźniki bistabilne różnią się od zwykłych tym, że potrzebują sterowanie tylko do zmiany stanu (włączenia bądź wyłączenia). Czyli sterowane są krótkimi impulsami - na przykład wywołanymi krótkim naciśnięciem przycisku chwilowego.
 Wynika stąd też problem - nie wiadomo jaki stan w danej chwili ma przekaźnik (czy jest włączony czy wyłączony). Dlatego warto wykorzystać przekaźnik z dwoma parami styków. Pierwsza para steruje obwodem oświetleniowym. Druga para jest podpięta do wejście sterownika i pozwala mu monitorować stan przekaźnika. Z kolei, gdy sterownik chce zmienić stan przekaźnika (np. na skutek polecenia z Home Assistant), to wystarczy, że zasili przekaźnik krótkim impulsem. W tym celu, równolegle do wyłącznika ściennego montuje się przekaźnik pomocniczy (zwykły, nie bistabilny) lub SSR sterowany ze sterownika. 
