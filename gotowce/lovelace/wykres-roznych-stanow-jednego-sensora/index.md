@@ -1,15 +1,14 @@
 ---
-title: Wykres pracy pieca
+title: Wykres różnych stanów jednego sensora
 nav_exclude: true
-# nav_order: 2
 has_children: false
-parent: "Frontend"
+parent: "Lovelace"
 grand_parent: "Gotowce"
 ---
-Frontend
+Lovelace
 {: .label }
 
-# Wykres pracy pieca
+# Wykres różnych stanów jednego sensora
 
 ## Wygląd wykresu
 
@@ -22,9 +21,9 @@ Powyższy wykres jest wizualną reprezentacją jednego sensora `sensor.boiler_cu
 
 ## Integracje
 
-| Integracje                                                        | Typ integracji    | Źródło |
-|:------------------------------------------------------------------|:------------------|:-------|
-| [apexcharts-card](https://github.com/RomRider/apexcharts-card)    | `custom`          | `HACS` |
+| Integracje                                                        | Typ integracji    | Źródło | Wersja |
+|:------------------------------------------------------------------|:------------------|:-------|:-------|
+| [apexcharts-card](https://github.com/RomRider/apexcharts-card)    | `custom`          | `HACS` |`1.8.1` |
 
 ## Konfiguracja
 
@@ -60,3 +59,6 @@ Powyższy wykres jest wizualną reprezentacją jednego sensora `sensor.boiler_cu
         color: blue
         transform: "return x === 'Podgrzewanie wody' ? 1 : 0;"
 ```
+## Dodatkowe informacje
+
+* Więcej przykładów konfiguracji `apex_config` można znaleźć bezpośrednio w [dokumentacji apexcharts](https://apexcharts.com/docs/options/)

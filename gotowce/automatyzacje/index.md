@@ -1,11 +1,14 @@
 ---
-title: Gotowce
-nav_exclude: false
+title: Automatyzacje i skrypty
 has_children: true
+nav_exclude: false
 has_toc: false
-nav_order: 5
+parent: "Gotowce"
 ---
-# Gotowce
+Automatyzacje/Skrypty
+{: .label .label-green }
+
+# Automatyzacje i skrypty
 
 <ul>
     {% for pg in site.pages %}
@@ -16,3 +19,4 @@ nav_order: 5
         {% endif %}
     {% endfor %}
 </ul>
+

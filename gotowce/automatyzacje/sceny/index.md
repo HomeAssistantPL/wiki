@@ -1,14 +1,14 @@
 ---
-title: Frontend
+title: Sceny
 has_children: true
 nav_exclude: false
 has_toc: false
 parent: "Gotowce"
 ---
-Frontend
-{: .label }
+Sceny
+{: .label .label-yellow }
 
-# Frontend
+# Sceny
 
 <ul>
     {% for pg in site.pages %}
