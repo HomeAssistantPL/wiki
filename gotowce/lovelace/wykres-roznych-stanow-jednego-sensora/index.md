@@ -28,36 +28,36 @@ Powyższy wykres jest wizualną reprezentacją jednego sensora `sensor.boiler_cu
 ## Konfiguracja
 
 ```yaml
-  - type: custom:apexcharts-card
-    graph_span: 12h
-    header:
-      show: true
-      title: Tryb pracy
-    apex_config:
-      grid:
-        show: false
-      chart:
-        height: "100%"
-      tooltip:
-        enabled: true
-      yaxis:
-        show: false
-    all_series_config:
-      type: area
-      curve: stepline
-      stroke_width: 2
-      opacity: 0.5
-      show:
-        legend_value: false
-    series:
-      - entity: sensor.boiler_current_mode
-        name: Ogrzewanie
-        color: red
-        transform: "return x === 'Ogrzewanie' ? 1 : 0;"
-      - entity: sensor.boiler_current_mode
-        name: Podgrzewanie wody
-        color: blue
-        transform: "return x === 'Podgrzewanie wody' ? 1 : 0;"
+type: custom:apexcharts-card
+graph_span: 12h
+header:
+  show: true
+  title: Tryb pracy
+apex_config:
+  grid:
+    show: false
+  chart:
+    height: "100%"
+  tooltip:
+    enabled: true
+  yaxis:
+    show: false
+all_series_config:
+  type: area
+  curve: stepline
+  stroke_width: 2
+  opacity: 0.5
+  show:
+    legend_value: false
+series:
+  - entity: sensor.boiler_current_mode
+    name: Ogrzewanie
+    color: red
+    transform: "return x === 'Ogrzewanie' ? 1 : 0;"
+  - entity: sensor.boiler_current_mode
+    name: Podgrzewanie wody
+    color: blue
+    transform: "return x === 'Podgrzewanie wody' ? 1 : 0;"
 ```
 ## Dodatkowe informacje
 
