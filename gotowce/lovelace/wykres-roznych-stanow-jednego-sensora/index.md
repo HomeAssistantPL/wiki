@@ -4,6 +4,7 @@ nav_exclude: true
 has_children: false
 parent: "Lovelace"
 grand_parent: "Gotowce"
+author: "anybody84"
 ---
 Lovelace
 {: .label }
