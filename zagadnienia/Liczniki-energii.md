@@ -25,3 +25,4 @@ Montowane w rodzielnicy na szynie DIN pozwalają zmierzyć energię w wybranych 
 Przykładowe urządzenia:
 * [Eastron SDM630 Modbus](../sprzet/producenci/Eastron/Eastron-SDM630-Modbus)
 * [Shelly 3EM](../sprzet/producenci/Shelly/Shelly-3EM)
+* Zamel MEW-01
