@@ -11,7 +11,8 @@ Automatyzacje/Skrypty
 # Automatyzacje i skrypty
 
 <ul>
-    {% for pg in site.pages %}
+    {% assign pages = site.pages | sort: "title" %}
+    {% for pg in pages %}
         {% if pg.parent == page.title %}
             <li>
                 <a href="{{ pg.url }}">{{ pg.title }}</a>, Autor: <a href="https://github.com/{{ pg.author }}">@{{ pg.author }}</a>
