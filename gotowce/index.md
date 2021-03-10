@@ -8,10 +8,11 @@ nav_order: 5
 # Gotowce
 
 <ul>
-    {% for pg in site.pages %}
+    {% assign pages = site.pages | sort: "title" %}
+    {% for pg in pages %}
         {% if pg.parent == page.title %}
             <li>
-                <a href="{{ site.url }}{{ site.baseurl }}/{{ pg.url }}">{{ pg.title }}</a>
+                <a href="{{ pg.url }}">{{ pg.title }}</a>
             </li>
         {% endif %}
     {% endfor %}
