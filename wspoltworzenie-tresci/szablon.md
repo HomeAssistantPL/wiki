@@ -10,7 +10,7 @@ nav_order: 2
 # Czy strona posiada podstrony. Domyślnie false
 has_children: false
 # Jeśli strona jest podrzędna względem innej strony, wówczas poniżej należy wpisać wartość parametru "title" strony nadrzędnej. W przeciwnym razie można usunąć parametr "parent" poniżej
-parent: "Lovelace"
+parent: "KATEGORIA"
 # W przypadku dzielenia się swoją konfiguracją, należy umieścić stronę w odpowiedniej podkategorii strony Gotowce, wówczas poniższa linia powinna pozostać bez zmian.
 grand_parent: "Gotowce"
 # W przypadku dzielenia się swoją konfiguracją, należy również podać swój login na GitHub.com
