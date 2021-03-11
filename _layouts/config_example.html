@@ -1,0 +1,7 @@
+---
+layout: default
+---
+{% assign parent_page = site.pages | where: "title", page.parent | first %}
+<p class="label label-{{parent_page.label_color}}">{{ parent_page.title }}</p>
+
+{{ content }}
