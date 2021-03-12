@@ -1,4 +1,5 @@
 ---
+layout: config_example
 title: Wykres różnych stanów jednego sensora
 nav_exclude: true
 has_children: false
@@ -6,9 +7,6 @@ parent: "Lovelace"
 grand_parent: "Gotowce"
 author: "anybody84"
 ---
-Lovelace
-{: .label }
-
 # Wykres różnych stanów jednego sensora
 
 ## Wygląd wykresu
