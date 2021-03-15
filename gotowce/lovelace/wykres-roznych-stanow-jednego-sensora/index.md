@@ -11,8 +11,8 @@ author: "anybody84"
 
 ## Wygląd wykresu
 
-![Wykres trybu pracy pieca](../../../assets/images/wykres-pracy-pieca-dark.jpg)
-![Wykres trybu pracy pieca](../../../assets/images/wykres-pracy-pieca-light.JPG)
+![Wykres trybu pracy pieca](wykres-pracy-pieca-dark.jpg)
+![Wykres trybu pracy pieca](wykres-pracy-pieca-light.jpg)
 
 ## Opis
 
