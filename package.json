@@ -1,0 +1,55 @@
+{
+  "name": "home-assistant-pl-wiki",
+  "private": true,
+  "description": "Home Assistant Polska Wiki",
+  "version": "0.0.1",
+  "author": "Pawel Szafer <pszafer@gmail.com>",
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@theme-ui/color": "^0.6.2",
+    "@theme-ui/presets": "^0.6.2",
+    "babel-preset-gatsby": "^1.2.0",
+    "dotenv": "^8.2.0",
+    "formik": "^2.2.6",
+    "framer-motion": "^4.1.3",
+    "gatsby": "^3.2.1",
+    "gatsby-plugin-image": "^1.2.1",
+    "gatsby-plugin-local-search": "^2.0.1",
+    "gatsby-plugin-manifest": "^3.2.0",
+    "gatsby-plugin-mdx": "^2.2.0",
+    "gatsby-plugin-offline": "^4.2.0",
+    "gatsby-plugin-react-helmet": "^4.2.0",
+    "gatsby-plugin-sharp": "^3.2.1",
+    "gatsby-plugin-sitemap": "^3.2.0",
+    "gatsby-plugin-theme-ui": "^0.6.2",
+    "gatsby-remark-images": "^4.2.0",
+    "gatsby-source-filesystem": "^3.2.0",
+    "gatsby-transformer-sharp": "^3.2.0",
+    "prism-react-renderer": "^1.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0",
+    "react-use-flexsearch": "^0.1.1",
+    "rehype-slug": "^4.0.1",
+    "theme-ui": "^0.6.2"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  }
+}
