@@ -1,7 +1,13 @@
-# Shelly 4 Pro
+---
+title: Shelly 4 Pro
+tags:
+  - wifi
+---
+
 Smart przekaźnik 4-kanałowy na szynę DIN
-* 4 kanały
-* max 10A na kanał
-* pomiar energii
-* zasilanie 230V AC
-* podłączenie 4 przycisków
+
+- 4 kanały
+- max 10A na kanał
+- pomiar energii
+- zasilanie 230V AC
+- podłączenie 4 przycisków

@@ -3,11 +3,18 @@ import { jsx } from "theme-ui";
 import { Box, Flex } from "theme-ui";
 
 import ThemeToggle from "./theme-toggle";
-import { LogoHeader, OnlyLogo } from "./logo";
+import Logo from "./logo";
 import Social from "./social";
 import { SearchButton } from "../search";
 
-const Header = ({ siteTitle, github, discord, facebook, toggleSearch }) => {
+const Header = ({
+  siteTitle,
+  github,
+  discord,
+  facebook,
+  toggleSearch,
+  closeMenu,
+}) => {
   return (
     <Box as="header" variant="header">
       <div
@@ -34,8 +41,7 @@ const Header = ({ siteTitle, github, discord, facebook, toggleSearch }) => {
               spacing: 1,
             }}
           >
-            <LogoHeader>{siteTitle}</LogoHeader>
-            <OnlyLogo />
+            <Logo siteTitle={siteTitle} closeMenu={closeMenu} />
           </Flex>
           <Flex
             sx={{

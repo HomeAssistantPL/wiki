@@ -1,8 +1,7 @@
 ---
-title: Strona główna
+title: Home Assistant Polska
+show_edit: false
 ---
-
-# HomeAssistantPL
 
 Witamy na stronach grupy Facebook [Home Assistant Polska](https://www.facebook.com/groups/homeassistantpolska).
 

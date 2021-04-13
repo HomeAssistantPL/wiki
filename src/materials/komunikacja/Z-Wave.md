@@ -1,2 +1,5 @@
-# Z-Wave
+---
+title: Z-Wave
+---
+
 TODO

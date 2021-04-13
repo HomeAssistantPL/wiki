@@ -1,7 +1,13 @@
-# Smart żarówki WiFi
+---
+title: Smart żarówki WiFi
+tags:
+  - wifi
+---
+
 Najłatwiejsze w instalacji urządzenie smart - wystarczy wkręcić smart żarówkę do zwykłej lampy by móc sterować nią z aplikacji na smartfonie lub z Home Assistant.
 
 Przykładowe urządzenia:
+
 ## Mi
 
 [Mi LED Smart Bulb White MJDP02YL](../producenci/Xiaomi/Mi-LED-Smart-Bulb-White-MJDP02YL)
@@ -15,9 +21,11 @@ Przykładowe urządzenia:
 [Mi LED Smart Bulb (Warm White)](../producenci/Xiaomi/Mi-LED-Smart-Bulb-Warm-White)
 
 ## Philips
+
 [Philips Wi-Fi Smart Bulb White](../producenci/Philips/Philips-Wi-Fi-Smart-Bulb-White)
 
 ## Shelly
+
 [SHELLY BULB – DUO RGBW](../producenci/Shelly/SHELLY-BULB-DUO-RGBW)
 
 [SHELLY DUO](../producenci/Shelly/SHELLY-DUO)

@@ -1,14 +1,14 @@
-import React from "react"
-import Main from "../components/main"
-import Seo from "../components/seo"
+import React from "react";
+import Main from "../components/main";
+import Seo from "../components/seo";
 
-const IndexTemplate = props => {
+const IndexTemplate = (props) => {
   return (
-    <Main>
+    <Main showEdit={false} title={props.pageContext.frontmatter.title}>
       <Seo />
       {props.children}
     </Main>
-  )
-}
+  );
+};
 
-export default IndexTemplate
+export default IndexTemplate;

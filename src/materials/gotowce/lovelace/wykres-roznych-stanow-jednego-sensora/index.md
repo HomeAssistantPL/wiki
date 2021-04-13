@@ -1,13 +1,9 @@
 ---
-layout: config_example
 title: Wykres różnych stanów jednego sensora
 nav_exclude: true
 has_children: false
-parent: "Lovelace"
-grand_parent: "Gotowce"
 author: "anybody84"
 ---
-# Wykres różnych stanów jednego sensora
 
 ## Wygląd wykresu
 
@@ -16,13 +12,13 @@ author: "anybody84"
 
 ## Opis
 
-Powyższy wykres jest wizualną reprezentacją jednego sensora `sensor.boiler_current_mode`, który - w zależności od aktualnego trybu pracy boilera - przyjmuje stan  `Ogrzewanie`, `Podgrzewanie wody` lub `wyłączony`. Wykres przekształca te stany na wartości `0` (dla stanu `wyłączony`) lub `1` (dla stanów `Ogrzewanie`, `Podgrzewanie wody`) i reprezentuje je w rozbiciu na dwie serie danych.
+Powyższy wykres jest wizualną reprezentacją jednego sensora `sensor.boiler_current_mode`, który - w zależności od aktualnego trybu pracy boilera - przyjmuje stan `Ogrzewanie`, `Podgrzewanie wody` lub `wyłączony`. Wykres przekształca te stany na wartości `0` (dla stanu `wyłączony`) lub `1` (dla stanów `Ogrzewanie`, `Podgrzewanie wody`) i reprezentuje je w rozbiciu na dwie serie danych.
 
 ## Wykorzystane karty
 
-| Karta                                                             | Typ karty         | Źródło | Wersja |
-|:------------------------------------------------------------------|:------------------|:-------|:-------|
-| [apexcharts-card](https://github.com/RomRider/apexcharts-card)    | `custom`          | `HACS` |`1.8.1` |
+| Karta                                                          | Typ karty | Źródło | Wersja  |
+| :------------------------------------------------------------- | :-------- | :----- | :------ |
+| [apexcharts-card](https://github.com/RomRider/apexcharts-card) | `custom`  | `HACS` | `1.8.1` |
 
 ## Konfiguracja
 
@@ -58,6 +54,7 @@ series:
     color: blue
     transform: "return x === 'Podgrzewanie wody' ? 1 : 0;"
 ```
+
 ## Dodatkowe informacje
 
-* Więcej przykładów konfiguracji `apex_config` można znaleźć bezpośrednio w [dokumentacji apexcharts](https://apexcharts.com/docs/options/)
+- Więcej przykładów konfiguracji `apex_config` można znaleźć bezpośrednio w [dokumentacji apexcharts](https://apexcharts.com/docs/options/)

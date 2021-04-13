@@ -1,2 +1,5 @@
-# Sprzęt Gosund
+---
+title:Sprzęt Gosund
+---
+
 [GOSUND SP111](GOSUND-SP111)

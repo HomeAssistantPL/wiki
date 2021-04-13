@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Main from "../components/main"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import Seo from "../components/seo"
+import React from "react";
+import { graphql } from "gatsby";
+import Main from "../components/main";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import Seo from "../components/seo";
 
 const Post = ({ pageContext, data }) => {
   const {
@@ -10,17 +10,19 @@ const Post = ({ pageContext, data }) => {
       body,
       tableOfContents,
       slug,
-      frontmatter: { tags, title },
+      frontmatter: { tags, title, show_edit },
       excerpt,
     },
     allMdx: connectedTags,
-  } = data
+  } = data;
   return (
     <Main
       tags={tags}
       pageContext={pageContext}
       toc={tableOfContents}
       connectedTags={connectedTags}
+      title={title}
+      showEdit={show_edit !== false}
     >
       <Seo
         title={title || slug.substring(slug.lastIndexOf("/") + 1)}
@@ -28,10 +30,10 @@ const Post = ({ pageContext, data }) => {
       />
       <MDXRenderer>{body}</MDXRenderer>
     </Main>
-  )
-}
+  );
+};
 
-export default Post
+export default Post;
 
 export const pageQuery = graphql`
   query MyQuery($id: String, $tags: [String!]) {
@@ -52,10 +54,11 @@ export const pageQuery = graphql`
           frontmatter {
             title
             tags
+            show_edit
           }
           id
         }
       }
     }
   }
-`
+`;

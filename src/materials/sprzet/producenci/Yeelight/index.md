@@ -1,4 +1,6 @@
-# Sprzęt Yeelight
+---
+title: Sprzęt Yeelight
+---
 
 ## Lampy Bluetooth
 

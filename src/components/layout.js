@@ -37,6 +37,7 @@ const Layout = (props) => {
         facebook={data.site.siteMetadata.facebook}
         discord={data.site.siteMetadata.discord}
         toggleSearch={toggleSearch}
+        closeMenu={() => setIsOpen(false)}
       />
       <MenuButton toggle={toggle} isOpen={isOpen} />
       {isSearch && (

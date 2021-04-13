@@ -1,4 +1,9 @@
-# Sonoff 4CH Pro
+---
+title: Sonoff 4CH Pro
+tags:
+  - wifi
+---
+
 Smart przekaźnik 4 kanałowy WiFi na szynę DIN
 Przekaźniki bezpotencjałowe.
 

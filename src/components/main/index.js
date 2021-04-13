@@ -14,7 +14,8 @@ const Main = ({
   toc,
   tags,
   connectedTags,
-  showEdit = true,
+  title,
+  showEdit,
 }) => {
   const { mdxChildren } = pageContext;
   return (
@@ -24,7 +25,7 @@ const Main = ({
         minHeight: "86vh",
       }}
     >
-      {toc && toc.items && (
+      {toc && toc.items && !!toc.items.length && (
         <Box
           sx={{
             color: "gray.6",
@@ -50,7 +51,10 @@ const Main = ({
               listStyle: "none",
             }}
           >
-            <TocItems level={0} items={toc.items} />
+            <TocItems
+              level={0}
+              items={[{ url: `#${title}`, title, items: toc.items }]}
+            />
           </ul>
         </Box>
       )}
@@ -75,6 +79,17 @@ const Main = ({
               #{x}
             </Link>
           ))}
+        <Heading
+          as="h1"
+          sx={{
+            letterSpacing: 2,
+            mt: 2,
+            color: "secondary",
+          }}
+          id={title.toLowerCase()}
+        >
+          {title}
+        </Heading>
         {children}
         <CategoryArticles mdxChildren={mdxChildren} />
         <ConnectedTags connectedTags={connectedTags} />{" "}

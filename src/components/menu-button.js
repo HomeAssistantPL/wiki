@@ -12,7 +12,7 @@ const MenuButton = ({ toggle, isOpen }) => {
         color: "primary",
         bg: "menuBg",
         zIndex: 10,
-        bottom: "3em",
+        bottom: "4em",
         py: 3,
         px: 3,
         right: "3em",

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Link, Box } from "theme-ui";
+import { jsx, Link, Box, Heading } from "theme-ui";
 import React from "react";
 import { Link as GatsbyLink, graphql } from "gatsby";
 import Main from "../components/main";
@@ -10,9 +10,10 @@ const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext;
   return (
     <>
-      <Seo title={`#${tag}`} />
-      <Main showEdit={false}>
-        <h3
+      <Seo title={`Tag #${tag}`} />
+      <Main showEdit={false} title={""}>
+        <Heading
+          as="h2"
           sx={{
             letteSpacing: 2,
           }}
@@ -25,7 +26,7 @@ const Tags = ({ pageContext, data }) => {
           >
             #{tag}
           </span>
-        </h3>
+        </Heading>
         <Box
           sx={{
             mt: 2,
@@ -57,15 +58,7 @@ const Tags = ({ pageContext, data }) => {
                       mr: 2,
                     }}
                   />
-                  <Link
-                    as={GatsbyLink}
-                    // apply="mdx.a"
-                    to={`/${slug}`}
-                    // color={bottomListColor}
-                    // _hover={{
-                    //   color: bottomListHoverColor,
-                    // }}
-                  >
+                  <Link as={GatsbyLink} to={`/${slug}`}>
                     {title || slug.substring(slug.lastIndexOf("/") + 1)}
                   </Link>
                 </li>

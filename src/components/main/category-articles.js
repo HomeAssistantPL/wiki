@@ -24,24 +24,29 @@ const CategoryArticles = ({ mdxChildren }) => {
           listStyle: "none",
         }}
       >
-        {mdxChildren.map(({ slug, frontmatter: { title } }) => (
-          <li
-            key={`mdx/${slug}`}
-            sx={{
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <FiArrowRightCircle
+        {mdxChildren.map(({ slug, frontmatter: { title } }) => {
+          const slugA = slug.replace(/\/$/, "");
+          const linkTitle =
+            title || slugA.substring(slugA.lastIndexOf("/") + 1);
+          return (
+            <li
+              key={`mdx/${slug}`}
               sx={{
-                mr: 2,
+                display: "flex",
+                alignItems: "center",
               }}
-            />
-            <Link as={GatsbyLink} to={`/${slug}`}>
-              {title || slug.substring(slug.lastIndexOf("/") + 1)}
-            </Link>
-          </li>
-        ))}
+            >
+              <FiArrowRightCircle
+                sx={{
+                  mr: 2,
+                }}
+              />
+              <Link as={GatsbyLink} to={`/${slug}`}>
+                {linkTitle}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </Box>
   );

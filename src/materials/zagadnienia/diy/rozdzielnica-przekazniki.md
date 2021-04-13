@@ -1,6 +1,11 @@
-# DIY rozdzielnica na przekaźnikach/SSR
+---
+title: Rozdzielnica na przekaźnikach SSR
+tags:
+  - diy
+---
+
 W tym wariancie, w rozdzielnicy montowany jest sterownik, który steruje przekaźnikami, które załączają obwody z oświetleniem.
-Do sterownika mogą być podpięte przewodami wyłączniki ścienne. Sterownik zapewnia także integrację z Home Assistant, komunikując się z nim przez radiowo (zawyczaj Wifi) lub przewodowo (Ethernet). 
+Do sterownika mogą być podpięte przewodami wyłączniki ścienne. Sterownik zapewnia także integrację z Home Assistant, komunikując się z nim przez radiowo (zawyczaj Wifi) lub przewodowo (Ethernet).
 
 Ponieważ tylko sterownik może uruchomić przekaźnik i w efekcie włączyć światło, to awaria sterownika oznacza **brak** światła.
 
@@ -12,8 +17,10 @@ Z uwagi na pobierany prąd oraz zakłócenia przy przełączaniu przekaźnika (s
 Wymagany zasilacz w rozdzielnicy do zasilania sterownika i przekaźników.
 
 #### Mikrokontroler plus przekaźniki połaczone bezpośrednio
+
 Jeden wyłącznik zajmuje jedno wejście mikrokontrollera, jeden przekaźnik zajmuje jedno wyjście mikrokontrolera - dla dużej liczby wyłączników i przekaźników potrzeba dużo wyjść czyli np. Arduino Mega
 
 #### Mikrokontroler plus przekaźniki połączone przez ekspander
+
 Wyłączniki są podłaczone do wejść ekspandera, przekaźniki są podłączone do wyjść ekspandera.
 Ekspander zajmuje dwa wyjścia mikrokontrolera więc można użyć mikrokontrollera z małą liczbą wyjść np. ESP8266 (Wemos D1 Mini, NodeMcu)

@@ -1,4 +1,9 @@
-# BlueTooth
+---
+title: Bluetooth
+tags:
+  - bluetooth
+---
+
 TODO
 
 Zobacz też:

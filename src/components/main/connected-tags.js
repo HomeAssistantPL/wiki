@@ -50,6 +50,7 @@ const ConnectedTags = ({ connectedTags }) => {
               {tags.map((x) => (
                 <Link
                   as={GatsbyLink}
+                  key={`extragags-${x}`}
                   to={`/tags/${x}`}
                   sx={{
                     ml: 1,
