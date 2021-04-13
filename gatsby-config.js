@@ -1,4 +1,4 @@
-const queries = require("./src/utils/algolia");
+// const queries = require("./src/utils/algolia");
 require("dotenv").config();
 
 module.exports = {
@@ -34,7 +34,7 @@ module.exports = {
         background_color: `#63B3ED`,
         theme_color_in_head: false,
         display: `standalone`,
-        icon: `src/images/logo.svg`, // This path is relative to the root of the site.
+        icon: `src/images/logo.svg`,
       },
     },
     {
@@ -61,14 +61,7 @@ module.exports = {
             },
           },
         ],
-        // remarkPlugins: [require("remark-toc")],
-        rehypePlugins: [
-          require("rehype-slug"),
-          // [
-          //   require("rehype-autolink-headings"),
-          //   { behavior: "wrap", properties: { variant: "mdx.link" } },
-          // ],
-        ],
+        rehypePlugins: [require("rehype-slug")],
       },
     },
     // {
@@ -90,10 +83,6 @@ module.exports = {
         preset: "@theme-ui/preset-funk",
       },
     },
-    // "@chakra-ui/gatsby-plugin",
-    // "gatsby-plugin-postcss",
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
     {
