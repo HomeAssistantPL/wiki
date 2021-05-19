@@ -18,6 +18,7 @@ Gotowe firmware dla ESP8266:
 * [EspEasy](https://espeasy.readthedocs.io/en/latest/)
 * [Supla](https://www.supla.org/pl/)
 * [Tasmota](https://tasmota.github.io/docs/)
+* [ESPurna](https://github.com/xoseperez/espurna/wiki/)
 
 Każdy z tych firmware obsługuje wiele urządzeń oraz posiada integrację z Home Assistant (natywną bądź przez MQTT).
 
