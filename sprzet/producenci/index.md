@@ -13,3 +13,4 @@ parent: "Sprzęt"
 * [Shelly](Shelly)
 * [Sonoff](Sonoff)
 * [Yeelight](Yeelight)
+* [ZAMEL](ZAMEL)
