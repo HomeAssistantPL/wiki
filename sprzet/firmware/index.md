@@ -18,6 +18,7 @@ Gotowe firmware dla ESP8266:
 * [EspEasy](https://espeasy.readthedocs.io/en/latest/)
 * [Supla](https://www.supla.org/pl/)
 * [Tasmota](https://tasmota.github.io/docs/)
+* [ESPurna](https://github.com/xoseperez/espurna/wiki/)
 
 Każdy z tych firmware obsługuje wiele urządzeń oraz posiada integrację z Home Assistant (natywną bądź przez MQTT).
 
@@ -25,3 +26,5 @@ Sposobem pośrednim jest wykorzystanie dodatku do Home Assistant - [ESPHome](htt
 Na podstawie tego pliku ESPHome generuje kod (Arduino/C++), który jest kompilowany i następnie można go wgrać do urządzenia OTA lub kablem USB (przez ESPHome Flasher). Dla wielu urządzeń fabrycznych istnieją szablony takiej konfiguracji na stronach: 
 * [esphome.io/devices](https://esphome.io/devices/)
 * [esphome-devices.com](https://www.esphome-devices.com/)
+
+Duża baza urządzeń z rozpiską pinów do użycia zarówno z tasmotą jak i esphome jest dostępna na stronie [templates.blakadder.com](https://templates.blakadder.com/)
