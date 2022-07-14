@@ -1,6 +1,6 @@
 ---
 layout: config_example
-title: Diosta na shelly3em
+title: Dioda na shelly3em
 nav_exclude: true
 has_children: false
 parent: "Automatyzacje i skrypty"
