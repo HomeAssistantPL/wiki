@@ -1,3 +1,2 @@
 source "https://rubygems.org"
-gem "just-the-docs"
-gem "github-pages", "~> 212", group: :jekyll_plugins
+gem "github-pages", "~> 227", group: :jekyll_plugins
