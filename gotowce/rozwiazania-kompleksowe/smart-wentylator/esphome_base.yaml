@@ -1,0 +1,92 @@
+substitutions:
+  temporary: !secret esphm_api_pswd
+  main_pswd: '${temporary}${hostname}'
+  wifi_ssid: !secret wifi_main_ssid
+  wifi_pswd: !secret wifi_main_pswd
+  sknt_ssid: !secret wifi_sknt_ssid
+  sknt_pswd: !secret wifi_sknt_pswd
+  work_ssid: !secret wifi_work_ssid
+  work_pswd: !secret wifi_work_pswd
+
+esphome:
+  on_boot:
+    priority: 800
+    then:
+    - script.execute: script_boot
+
+#################### ustawienia serwera
+web_server:
+  port: 80
+
+#################### logowanie
+debug:
+logger:
+  baud_rate: 0
+
+#################### HomeAssistant API
+api:
+  password: $main_pswd
+
+time:
+- platform: homeassistant
+  id: homeassistant_time
+
+#################### update
+ota:
+  password: !secret esphm_ota_pswd
+
+#################### wspólne switche i sensory
+button:
+- platform: restart
+  name: "${hostname}_restart"
+  id: ribut
+- platform: safe_mode
+  name: "${hostname}_safemode"
+  id: ribut_safe
+
+sensor:
+#################### sygnał wifi
+- platform: wifi_signal
+  name: "${hostname}_linkquality"
+  update_interval: 60s
+  unit_of_measurement: dBm
+  device_class: signal_strength
+  disabled_by_default: true
+#################### czas pracy
+- platform: uptime
+  name: "${hostname}_uptime"
+  update_interval: 60s
+  icon: mdi:clock-outline
+  disabled_by_default: true
+
+text_sensor:
+#################### zainstalowana wersja esphome
+- platform: version
+  name: "${hostname}_version"
+  hide_timestamp: true
+  icon: mdi:code-json
+#################### identyfikator chipa
+- platform: template
+  name: "${hostname}_id"
+  id: chip_id
+  update_interval: never
+  icon: mdi:chip
+  disabled_by_default: true
+- platform: template
+  name: "${hostname}_mac"
+  id: chip_mac
+  update_interval: never
+  icon: mdi:lan
+  disabled_by_default: true
+
+#################### skrypty
+script:
+- id: script_boot
+  mode: single
+  then:
+  - text_sensor.template.publish:
+      id: chip_id
+      state: !lambda 'return to_string(ESP.getChipId());'
+  - text_sensor.template.publish:
+      id: chip_mac
+      state: !lambda 'std::string mac_str = ""; for (int i=0; i<17; i++) { mac_str = mac_str + WiFi.macAddress()[i]; } return mac_str;'
