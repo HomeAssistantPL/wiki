@@ -11,7 +11,7 @@ github_username: "HomeAssistantPL"
 repository: HomeAssistantPL/wiki
 
 # Build settings
-remote_theme: pmarsceill/just-the-docs
+remote_theme: just-the-docs
 color_scheme: light
 # plugins:
 #   - jekyll-feed
