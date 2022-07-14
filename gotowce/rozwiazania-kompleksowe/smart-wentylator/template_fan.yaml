@@ -1,0 +1,41 @@
+fan:
+- platform: template
+  fans:
+    1_lvn_ventilator:
+      friendly_name: "Wentylator w salonie"
+      unique_id: 1_lvn_ventilator
+      value_template: "{{ 'off' if is_state('select.1_lvn_ventilator_speed', 'Stop') else 'on' }}"
+      percentage_template: "{{ 0 if is_state('select.1_lvn_ventilator_speed', 'Stop') else 33 if is_state('select.1_lvn_ventilator_speed', 'Low') else 66 if is_state('select.1_lvn_ventilator_speed', 'Medium')  else 100 }}"
+      preset_mode_template: "{{ states('select.1_lvn_ventilator_speed') }}"
+      oscillating_template: "{{ states('switch.1_lvn_ventilator_oscillation') }}"
+      turn_on:
+        service: select.select_option
+        data:
+          entity_id: select.1_lvn_ventilator_speed
+          option: "Low"
+      turn_off:
+        service: select.select_option
+        data:
+          entity_id: select.1_lvn_ventilator_speed
+          option: "Stop"
+      set_percentage:
+        service: select.select_option
+        data:
+          entity_id: select.1_lvn_ventilator_speed
+          option: "{{ 'High' if percentage == 100 else 'Medium' if percentage >= 66 else 'Low' if percentage >= 1 else 'Stop' }}"
+      set_preset_mode:
+        service: select.select_option
+        data:
+          entity_id: select.1_lvn_ventilator_speed
+          option: "{{ preset_mode }}"
+      #################### nie działa, do przepisania ;)
+      # set_oscillating:
+      #   service: "switch.turn_{{ oscillating }}"
+      #   data:
+      #     entity_id: switch.1_lvn_ventilator_oscillation
+      speed_count: 3
+      preset_modes:
+        - 'Stop'
+        - 'Low'
+        - 'Medium'
+        - 'High'

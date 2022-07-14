@@ -1,0 +1,552 @@
+#################### 1_lvn_ventilator - silvercrest fan powered by nodemcu #####
+#
+# | function | Bpin nr | Bpin id | Spin nr | Spin id |
+# |----------|---------|---------|---------|---------|
+# | all off  | RX      | GPIO3   |         |         |
+# | speed 1  | D7      | GPIO13  | D1      | GPIO5   |
+# | speed 2  | S2      | GPIO09  | D5      | GPIO14  |
+# | speed 3  | S3      | GPIO10  | D2      | GPIO4   |
+# | oscill.  | TX      | GPIO01  | D6      | GPIO12  |
+# | LEDs     | D3      | GPIO0   |         |         |
+#
+# AVOID! high on boot pins:
+# D3 GPIO0 / D4 GPIO02 / D8 GPIO15
+
+#################### system stuff
+
+substitutions:
+  hostname: 1_lvn_ventilator
+  idprefix: lvn_ventilator
+  
+  wait4switch: '500ms'
+  delay: '10ms'
+  delay_led: '100ms'
+  delay_flash: '300ms'
+  flash: '200ms'
+  brightness: '0.5'
+
+esphome:
+  name: ${hostname}
+
+esp8266:
+  board: nodemcuv2
+
+packages:
+  wifi: !include _includes/esphome_wifi.yaml
+  device_base: !include _includes/esphome_base.yaml
+
+#################### variables #################################################
+
+globals:
+- id: max_led
+  type: int
+  restore_value: no
+  initial_value: '6'
+- id: c
+  type: int
+  restore_value: no
+  initial_value: '2'
+- id: leds
+  type: int
+  restore_value: no
+  initial_value: '0'
+- id: x
+  type: int
+  restore_value: no
+  initial_value: '0'
+- id: y
+  type: int
+  restore_value: no
+  initial_value: '0'
+- id: z
+  type: int
+  restore_value: no
+  initial_value: '-1'
+- id: r
+  type: float
+  restore_value: no
+  initial_value: "${brightness}"
+- id: g
+  type: float
+  restore_value: no
+  initial_value: "${brightness}"
+- id: b
+  type: float
+  restore_value: no
+  initial_value: "${brightness}"
+
+#################### entities ##################################################
+
+binary_sensor:
+#################### PHYSICAL BUTTON: all off
+- platform: gpio
+  name: "${hostname}_off"
+  id: "${idprefix}_off"
+  internal: true
+  pin:
+    number: GPIO3
+    inverted: true
+    mode: INPUT_PULLUP
+  filters:
+    - delayed_on_off: ${delay}
+  on_state:
+    then:
+      - select.set:
+          id: "${idprefix}_speed"
+          option: "Stop"
+#################### PHYSICAL BUTTON: oscillation on/off
+- platform: gpio
+  name: "${hostname}_oscillation"
+  id: "${idprefix}_oscillation"
+  internal: true
+  pin:
+    number: GPIO01
+    inverted: true
+    mode: INPUT_PULLUP
+  filters:
+    - delayed_on_off: ${delay}
+  on_press:
+    then:
+      - switch.toggle: "${idprefix}_oscillation_relay"
+#################### PHYSICAL BUTTON: set speed 1
+- platform: gpio
+  name: "${hostname}_speed_1"
+  id: "${idprefix}_speed_1"
+  internal: true
+  pin:
+    number: GPIO13
+    inverted: true
+    mode: INPUT_PULLUP
+  filters:
+    - delayed_on_off: ${delay}
+  on_press:
+    then:
+      - select.set:
+          id: "${idprefix}_speed"
+          option: "Low"
+#################### PHYSICAL BUTTON: set speed 2
+- platform: gpio
+  name: "${hostname}_speed_2"
+  id: "${idprefix}_speed_2"
+  internal: true
+  pin:
+    number: GPIO09
+    inverted: true
+    mode: INPUT_PULLUP
+  filters:
+    - delayed_on_off: ${delay}
+  on_press:
+    then:
+      - select.set:
+          id: "${idprefix}_speed"
+          option: "Medium"
+#################### PHYSICAL BUTTON: set speed 3
+- platform: gpio
+  name: "${hostname}_speed_3"
+  id: "${idprefix}_speed_3"
+  internal: true
+  pin:
+    number: GPIO10
+    inverted: true
+    mode: INPUT_PULLUP
+  filters:
+    - delayed_on_off: ${delay}
+  on_press:
+    then:
+      - select.set:
+          id: "${idprefix}_speed"
+          option: "High"
+
+switch:
+#################### RELAY SWITCH: oscillation
+- platform: gpio
+  name: "${hostname}_oscillation"
+  id: "${idprefix}_oscillation_relay"
+  restore_mode: RESTORE_DEFAULT_OFF
+  icon: "mdi:rotate-360"
+  pin:
+    number: GPIO12
+    inverted: true
+  on_turn_on:
+    - globals.set:
+        id: leds
+        value: '2'
+    - globals.set:
+        id: c
+        value: '1'
+    - globals.set:
+        id: r
+        value: '0'
+    - globals.set:
+        id: g
+        value: "${brightness}"
+    - globals.set:
+        id: b
+        value: '0'
+    - script.execute: rotate_leds
+
+#################### RELAY SWITCH: set speed 1
+- platform: gpio
+  name: "${hostname}_speed_1"
+  id: "${idprefix}_speed_1_relay"
+  internal: true
+  pin:
+    number: GPIO5
+    inverted: true
+  interlock: &speed ["${idprefix}_speed_1_relay", "${idprefix}_speed_2_relay", "${idprefix}_speed_3_relay"]
+  interlock_wait_time: ${wait4switch}
+  on_turn_on:
+    - globals.set:
+        id: leds
+        value: '1'
+    - if:
+        condition:
+          switch.is_on: lvn_ventilator_oscillation_relay
+        then:
+          - script.execute: rotate_leds
+        else:
+          - script.execute: static_leds
+#################### RELAY SWITCH: set speed 2
+- platform: gpio
+  name: "${hostname}_speed_2"
+  id: "${idprefix}_speed_2_relay"
+  internal: true
+  pin:
+    number: GPIO4
+    inverted: true
+  interlock: *speed
+  interlock_wait_time: ${wait4switch}
+  on_turn_on:
+    - globals.set:
+        id: leds
+        value: '2'
+    - if:
+        condition:
+          switch.is_on: lvn_ventilator_oscillation_relay
+        then:
+          - script.execute: rotate_leds
+        else:
+          - script.execute: static_leds
+#################### RELAY SWITCH: set speed 3
+- platform: gpio
+  name: "${hostname}_speed_3"
+  id: "${idprefix}_speed_3_relay"
+  internal: true
+  pin:
+    number: GPIO14
+    inverted: true
+  interlock: *speed
+  interlock_wait_time: ${wait4switch}
+  on_turn_on:
+    - globals.set:
+        id: leds
+        value: '3'
+    - if:
+        condition:
+          switch.is_on: lvn_ventilator_oscillation_relay
+        then:
+          - script.execute: rotate_leds
+        else:
+          - script.execute: static_leds
+
+select:
+#################### speed selector [because slider sucks]
+- platform: template
+  name: "${hostname}_speed"
+  id: "${idprefix}_speed"
+  optimistic: true
+  options:
+  - "Stop"
+  - "Low"
+  - "Medium"
+  - "High"
+  icon: "mdi:fan"
+  on_value:
+    - if:
+        condition:
+          lambda: 'return (id(lvn_ventilator_speed).state == "Stop");'
+        then:
+          - switch.turn_off: "${idprefix}_speed_1_relay"
+          - switch.turn_off: "${idprefix}_speed_2_relay"
+          - switch.turn_off: "${idprefix}_speed_3_relay"
+          - light.turn_on:
+              id: "${idprefix}_led"
+              brightness: "${brightness}"
+              transition_length: ${delay_led}
+              red: "${brightness}"
+              green: 0
+              blue: 0
+          - delay: 2s
+          - light.turn_off: "${idprefix}_led"
+    - if:
+        condition:
+          lambda: 'return (id(lvn_ventilator_speed).state == "Low");'
+        then:
+          - delay: ${delay}
+          - switch.turn_on: "${idprefix}_speed_1_relay"
+    - if:
+        condition:
+          lambda: 'return (id(lvn_ventilator_speed).state == "Medium");'
+        then:
+          - delay: ${delay}
+          - switch.turn_on: "${idprefix}_speed_2_relay"
+    - if:
+        condition:
+          lambda: 'return (id(lvn_ventilator_speed).state == "High");'
+        then:
+          - delay: ${delay}
+          - switch.turn_on: "${idprefix}_speed_3_relay"
+
+light:
+#################### LED circle
+- platform: neopixelbus
+  name: "${hostname}_circle"
+  id: "${idprefix}_circle"
+  type: GRB
+  variant: WS2812
+  icon: "mdi:dots-circle"
+  default_transition_length: "${delay_led}"
+  flash_transition_length: "${delay_flash}"
+  pin: GPIO0
+  num_leds: 6
+  effects:
+    - pulse:
+    - pulse:
+        name: "Fast Pulse"
+        transition_length: "${flash}"
+        update_interval: "${flash}"
+    - addressable_rainbow:
+    - addressable_color_wipe:
+    - addressable_scan:
+#################### LED dot
+- platform: neopixelbus
+  name: "${hostname}_led"
+  id: "${idprefix}_led"
+  type: GRB
+  variant: WS2812
+  icon: "mdi:dots-hexagon"
+  default_transition_length: "${delay_led}"
+  flash_transition_length: "${delay_flash}"
+  pin: GPIO0
+  num_leds: 7
+  effects:
+    - pulse:
+    - pulse:
+        name: "Fast Pulse"
+        transition_length: "${flash}"
+        update_interval: "${flash}"
+    - automation:
+        name: rotate_green_leds
+        sequence:
+          - globals.set:
+              id: leds
+              value: '2'
+          - globals.set:
+              id: r
+              value: '0'
+          - globals.set:
+              id: g
+              value: "${brightness}"
+          - globals.set:
+              id: b
+              value: '0'
+          - script.execute: rotate_leds
+    - automation:
+        name: rotate_red_leds
+        sequence:
+          - globals.set:
+              id: leds
+              value: '2'
+          - globals.set:
+              id: r
+              value: "${brightness}"
+          - globals.set:
+              id: g
+              value: '0'
+          - globals.set:
+              id: b
+              value: '0'
+          - script.execute: rotate_leds
+    - automation:
+        name: rotate_1_led
+        sequence:
+          - globals.set:
+              id: leds
+              value: '1'
+          - script.execute: rotate_leds
+    - automation:
+        name: rotate_2_leds
+        sequence:
+          - globals.set:
+              id: leds
+              value: '2'
+          - script.execute: rotate_leds
+    - automation:
+        name: rotate_3_leds
+        sequence:
+          - globals.set:
+              id: leds
+              value: '3'
+          - script.execute: rotate_leds
+    - automation:
+        name: static_1_led
+        sequence:
+          - globals.set:
+              id: leds
+              value: '1'
+          - script.execute: static_leds
+    - automation:
+        name: static_2_leds
+        sequence:
+          - globals.set:
+              id: leds
+              value: '2'
+          - script.execute: static_leds
+    - automation:
+        name: static_3_leds
+        sequence:
+          - globals.set:
+              id: leds
+              value: '3'
+          - script.execute: static_leds
+
+#################### scripts ###################################################
+script:
+- #################### blinking leds
+  id: static_leds
+  then:
+    - light.turn_off: "${idprefix}_led"
+    - repeat:
+        count: 5
+        then:
+          - light.addressable_set:
+              id: "${idprefix}_led"
+              color_brightness: "${brightness}"
+              red: !lambda "return id(r);"
+              green: !lambda "return id(g);"
+              blue: !lambda "return id(b);"
+              range_from: 0
+              range_to: 0
+          - if:
+              condition:
+                lambda: "return id(leds) >= 2;"
+              then:
+                - light.addressable_set:
+                    id: "${idprefix}_led"
+                    color_brightness: "${brightness}"
+                    red: !lambda "return id(r);"
+                    green: !lambda "return id(g);"
+                    blue: !lambda "return id(b);"
+                    range_from: 5
+                    range_to: 5
+          - if:
+              condition:
+                lambda: "return id(leds) == 3;"
+              then:
+                - light.addressable_set:
+                    id: "${idprefix}_led"
+                    color_brightness: "${brightness}"
+                    red: !lambda "return id(r);"
+                    green: !lambda "return id(g);"
+                    blue: !lambda "return id(b);"
+                    range_from: 1
+                    range_to: 1
+          - delay: ${delay_led}
+          - light.addressable_set:
+              id: "${idprefix}_led"
+              color_brightness: 0
+              red: 0
+              green: 0
+              blue: 0
+              range_from: 0
+              range_to: 6
+          - delay: ${delay_led}
+- #################### rotation animation
+  id: rotate_leds
+  then:
+    - light.turn_off: "${idprefix}_led"
+    - globals.set:
+        id: x
+        value: '0'
+    - globals.set:
+        id: y
+        value: !lambda "return (id(x) + id(leds) - 1);"
+    - globals.set:
+        id: z
+        value: '-1'
+    - repeat:
+        count: !lambda "return id(c);"
+        then:
+          - repeat:
+              count: !lambda "return (id(max_led) + id(leds));"
+              then:
+              - light.addressable_set:
+                  id: "${idprefix}_led"
+                  color_brightness: "${brightness}"
+                  red: !lambda "return id(r);"
+                  green: !lambda "return id(g);"
+                  blue: !lambda "return id(b);"
+                  range_from: !lambda "return id(x);"
+                  range_to: !lambda "return id(y);"
+              - if:
+                  condition:
+                    lambda: "return id(z) >= 0;"
+                  then:
+                    - light.addressable_set:
+                        id: "${idprefix}_led"
+                        color_brightness: "${brightness}"
+                        red: !lambda "return id(r);"
+                        green: !lambda "return id(g);"
+                        blue: !lambda "return id(b);"
+                        range_from: 0
+                        range_to: !lambda "return id(z);"
+              - delay: ${delay_led}
+              - light.addressable_set:
+                  id: "${idprefix}_led"
+                  color_brightness: "${brightness}"
+                  red: 0
+                  green: 0
+                  blue: 0
+                  range_from: !lambda "return id(x);"
+                  range_to: !lambda "return id(y);"
+              - if:
+                  condition:
+                    lambda: "return id(z) >= 0;"
+                  then:
+                    - light.addressable_set:
+                        id: "${idprefix}_led"
+                        color_brightness: "${brightness}"
+                        red: 0
+                        green: 0
+                        blue: 0
+                        range_from: 0
+                        range_to: !lambda "return id(z);"
+              - globals.set:
+                  id: x
+                  value: !lambda |-
+                    if ((id(x) + 1) == id(max_led)) {
+                      return (id(x) - id(max_led) + 1);
+                    } else {
+                      return (id(x) + 1);
+                    }
+              - globals.set:
+                  id: y
+                  value: !lambda |-
+                    if ((id(x) + id(leds) - 1) < 0) {
+                      return id(max_led) - 1;
+                    } else if (id(x) == (id(max_led) - 1)) {
+                      return id(max_led) - 1;
+                    } else if ((id(x) + id(leds) - 1) >= id(max_led)) {
+                      return id(max_led) - 1;
+                    } else {
+                      return id(x) + id(leds) - 1;
+                    }
+              - globals.set:
+                  id: z
+                  value: !lambda |-
+                    if (id(leds) - (id(y) - id(x)) - 1 > 0) {
+                      return (id(leds) - (id(y) - id(x)) - 2);
+                    } else {
+                      return -1;
+                    }
+              - delay: ${delay_led}

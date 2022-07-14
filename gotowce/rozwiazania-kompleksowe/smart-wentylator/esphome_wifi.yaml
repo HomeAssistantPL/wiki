@@ -1,0 +1,17 @@
+#################### standardowe wifi
+wifi:
+  networks:
+  - ssid: $wifi_ssid
+    password: $wifi_pswd
+  - ssid: $work_ssid
+    password: $work_pswd
+  - ssid: $sknt_ssid
+    password: $sknt_pswd
+
+#################### ap w razie problemów z wifi
+  ap:
+    ssid: '${hostname}.ap'
+    password: $main_pswd
+    ap_timeout: 5min
+
+captive_portal:
