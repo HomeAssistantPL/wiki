@@ -258,6 +258,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 212)
+  just-the-docs
 
 BUNDLED WITH
    2.2.11
